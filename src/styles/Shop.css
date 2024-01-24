@@ -1,0 +1,160 @@
+.heroSection {
+  position: relative;
+  box-shadow: 42px 67px 119px -97px rgba(255, 0, 0, 0.5) inset;
+}
+
+.heroImg img {
+  width: 70%;
+}
+
+.heroSection {
+  min-height: 100vh;
+}
+
+.heroHeading {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.heroSubHeading {
+  font-weight: bold;
+}
+.dash {
+  width: 10rem;
+  height: 2px;
+  background-color: red;
+  margin: auto;
+}
+.heroBtn {
+  width: 15rem;
+  padding: 0.8rem 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+  border: 2px solid red;
+  color: red;
+}
+
+.heroBtn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.card {
+  margin: 2rem;
+  width: 17rem;
+  border: none;
+  /* box-shadow: 10px 10px 10px #eaeaea; */
+  box-shadow: 0px 1px 2px #eaeaea;
+}
+
+.card img {
+  width: 100%;
+}
+.card h3 {
+  padding: 5px 2px;
+  text-align: justify;
+  font-size: 20px;
+  /* background-color: red; */
+}
+.card h4 {
+  padding: 0 2px;
+}
+
+.productBtn {
+  padding: 0.2rem 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid red;
+  color: red;
+  font-weight: bold;
+  transition: 0.5s;
+  margin: 5px 0;
+}
+.productBtn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.productCartBtn {
+  color: #000;
+  border: 2px solid #000;
+}
+.productCartBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.productDetail {
+  padding: 3rem 0;
+}
+.spcol {
+  color: red;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.productDescription {
+  width: 67%;
+}
+
+@media screen and (max-width: 1280px) {
+  .heroHeading {
+    font-size: 4rem;
+  }
+  .card {
+    /* background-color: red; */
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .heroHeading {
+    font-size: 3rem;
+  }
+  .card {
+    margin: 0.5rem;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+  }
+
+  .productDescription {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .heroSection {
+    padding-top: 2rem;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .productDescription {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .heroHeading {
+    font-size: 2rem;
+  }
+  .heroBtn {
+    width: 10rem;
+    padding: 0.5rem 0;
+  }
+  .card {
+    width: 15rem;
+  }
+  .productDetail {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
