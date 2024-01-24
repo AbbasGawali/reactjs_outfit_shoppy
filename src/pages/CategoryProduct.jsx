@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout/Layout";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
-import HeroKid from "../assets/ShopImgs/Herokid.png";
-import HeroMan from "../assets/ShopImgs/HeroMen.png";
-import HeroWomen from "../assets/ShopImgs/Herowomen.png";
+import axios from "axios"; 
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { useCart } from "../context/Cart";
 import { toast } from "react-toastify";
+
 const CategoryProduct = () => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState([]);
-  const [photo, setPhoto] = useState(HeroMan);
+  const [photo, setPhoto] = useState("/Heromen.png");
   const params = useParams();
 
   const [cart, setCart] = useCart();
@@ -34,11 +32,11 @@ const CategoryProduct = () => {
       setCategory(data?.category);
 
       if (data?.category.name === "Men") {
-        setPhoto(HeroMan);
+        setPhoto("/Heromen.png");
       } else if (data?.category.name === "Women") {
-        setPhoto(HeroWomen);
+        setPhoto("/Herowomen.png");
       } else {
-        setPhoto(HeroKid);
+        setPhoto("/Herokid.png");
       }
  
     } catch (error) {
