@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSearch } from "../context/search";
+import { useSearch } from "../context/Search";
 import Layout from "../components/layout/Layout";
 
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
